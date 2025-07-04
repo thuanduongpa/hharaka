@@ -1,0 +1,5 @@
+#!/bin/sh
+
+TESTS=${1:-"test test/outbound test/plugins/auth test/plugins/queue test/plugins"}
+
+npx mocha --exit $TESTS
